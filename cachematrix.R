@@ -42,7 +42,7 @@ inverse <- y$getInverse()
 if(!is.null(inverse)) {
   message("getting cached data")
   return(inverse)
-  
+}
 # otherwise get the matrix, caclulate the inverse and store it in the cache
 data <- y$getMatrix()
 inverse <- solve(data)
